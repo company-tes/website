@@ -228,20 +228,6 @@ button {
      height: 100%;
 }
 
-.loader {
-     height: 100%;
-     width: 100%;
-     position: absolute;
-     left: 0;
-     top: 0;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-}
-
-.loader img {
-     width: 280px;
-}
 
 
 /*-- header area --*/
@@ -313,9 +299,7 @@ button {
      border-top: #090102 solid 11px;
 }
 
-.logo {
-     padding-top: 14px;
-}
+
 
 
 /** banner section **/
@@ -405,35 +389,16 @@ button {
      display: flex;
      align-items: center;
      flex-wrap: wrap;
+     align-content: stretch;
 }
-
-.read_more {
-     font-size: 17px;
-     background-color: transparent;
-     border: #ffffff solid 2px;
-     color: #1a1a1a;
-     padding: 15px 0px;
-     width: 100%;
-     max-width: 222px;
-     text-align: center;
-     display: inline-block;
-     transition: ease-in all 0.5s;
-     font-weight: 500;
-     border-radius: 40px;
-}
-
-.read_more:hover {
-     background: #03cafc;
-     color: #fff !important;
-     transition: ease-in all 0.5s;
-}
-
-
 /** about section **/
 
 .about {
      border-bottom: #000 solid 1px;
      padding: 130px 0 90px 0;
+}
+.row {
+     width: 100%;
 }
 
 .about .about_img {
@@ -899,4 +864,50 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+
+/* nav dropdown */
+.dropbtn {
+     background-color: transparent;
+     color: black;
+     padding: 16px;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
+}
+
+.dropdown {
+     position: relative;
+     display: inline-block;
+}
+
+.dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     z-index: 1;
+}
+
+.dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+}
+
+.dropdown-content a:hover {
+     background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+     display: block;
+}
+
+.dropdown:hover .dropbtn {
+     background-color: black;
+     color:white;
+     border-radius: 45%;
 }
