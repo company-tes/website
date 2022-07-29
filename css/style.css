@@ -39,7 +39,6 @@ html {
 }
 
 body {
-     color: #666666;
      font-size: 14px;
      font-family: 'Poppins', sans-serif;
      line-height: 1.80857;
@@ -672,18 +671,16 @@ button {
 }
 
 .main_form {
-     position: absolute;
      z-index: 999;
      background: #fff;
      padding: 40px 50px;
-     margin-top: 107px;
 }
 
 .main_form .contactus {
      border-bottom: #111111 solid 1px;
      margin-bottom: 25px;
      width: 100%;
-     height: 57px;
+     height: 100px;
      background: transparent;
      color: #4b4b4c;
      font-size: 18px;
